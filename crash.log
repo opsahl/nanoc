@@ -1,0 +1,182 @@
+Crashlog created at 2012-07-16 23:39:34 +0200
+
+=== MESSAGE:
+
+RuntimeError: Found 2 content files for content/assets/css/bootstrap; expected 0 or 1
+
+=== COMPILATION STACK:
+
+  (empty)
+
+=== BACKTRACE:
+
+  0. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/data_sources/filesystem.rb:164:in `block in all_split_files_in'
+  1. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/data_sources/filesystem.rb:154:in `each_pair'
+  2. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/data_sources/filesystem.rb:154:in `all_split_files_in'
+  3. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/data_sources/filesystem.rb:78:in `load_objects'
+  4. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/data_sources/filesystem.rb:37:in `items'
+  5. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:313:in `block in load_items'
+  6. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:312:in `each'
+  7. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:312:in `load_items'
+  8. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:246:in `load'
+  9. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:126:in `layouts'
+  10. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:185:in `dependency_tracker'
+  11. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/memoization.rb:56:in `block in memoize'
+  12. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:453:in `stores'
+  13. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:144:in `unload'
+  14. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:277:in `unload'
+  15. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:257:in `rescue in load'
+  16. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:261:in `load'
+  17. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:112:in `load'
+  18. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/compilation/compiler.rb:82:in `run'
+  19. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/base/source_data/site.rb:57:in `compile'
+  20. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/commands/compile.rb:57:in `run'
+  21. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  22. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:63:in `handle_while'
+  23. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  24. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/command_runner.rb:13:in `call'
+  25. /home/torerling/.gem/ruby/1.9.1/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
+  26. /home/torerling/.gem/ruby/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  27. /home/torerling/.gem/ruby/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  28. /home/torerling/.gem/ruby/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  29. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/commands/nanoc.rb:39:in `block in define'
+  30. /home/torerling/.gem/ruby/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  31. /home/torerling/.gem/ruby/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  32. /home/torerling/.gem/ruby/1.9.1/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  33. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli.rb:47:in `block in run'
+  34. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:63:in `handle_while'
+  35. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  36. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib/nanoc/cli.rb:44:in `run'
+  37. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/bin/nanoc:19:in `<top (required)>'
+  38. /home/torerling/.gem/ruby/1.9.1/bin/nanoc:23:in `load'
+  39. /home/torerling/.gem/ruby/1.9.1/bin/nanoc:23:in `<main>'
+
+=== VERSION INFORMATION:
+
+nanoc 3.4.0 © 2007-2012 Denis Defreyne.
+Running ruby 1.9.3 (2012-04-20) on x86_64-linux with RubyGems 1.8.23.
+
+=== INSTALLED GEMS:
+
+  actionmailer 3.2.6
+  actionpack 3.2.6
+  activemodel 3.2.6
+  activerecord 3.2.6
+  activeresource 3.2.6
+  activesupport 3.2.6
+  adsf 1.1.1
+  arel 3.0.2
+  asdf 0.5.0
+  bigdecimal 1.1.0
+  builder 3.0.0
+  bundler 1.1.4
+  coffee-rails 3.2.2
+  coffee-script 2.2.0
+  coffee-script-source 1.3.3
+  colored 1.2
+  commonjs 0.2.6
+  cri 2.3.0
+  erubis 2.7.0
+  execjs 1.4.0
+  hike 1.2.1
+  i18n 0.6.0
+  io-console 0.3
+  journey 1.0.4
+  jquery-rails 2.0.2
+  json 1.5.4, 1.7.3
+  kramdown 0.13.7
+  less 2.2.1
+  mail 2.4.4
+  maruku 0.6.0
+  mime-types 1.19
+  minitest 2.5.1
+  multi_json 1.3.6
+  nanoc 3.4.0
+  polyglot 0.3.3
+  rack 1.2.5, 1.4.1
+  rack-cache 1.2
+  rack-ssl 1.3.2
+  rack-test 0.6.1
+  rails 3.2.6
+  railties 3.2.6
+  rainpress 1.0
+  rake 0.9.2.2
+  rdoc 3.9.4, 3.12
+  sass 3.1.20
+  sass-rails 3.2.5
+  sprockets 2.1.3
+  sqlite3 1.3.6
+  stringex 1.4.0
+  syntax 1.0.0
+  thor 0.15.3, 0.15.4
+  tilt 1.3.3
+  treetop 1.4.10
+  tzinfo 0.3.33
+  uglifier 1.2.6
+
+=== ENVIRONMENT:
+
+CLOJURE_HOME => "/usr/share/clojure"
+DBUS_SESSION_BUS_ADDRESS => "unix:abstract=/tmp/dbus-gNB0ZDsufQ,guid=a6e742c73aae62b276ce033550015f6a"
+DISPLAY => ":0"
+GOPATH => "/usr/lib/go/site"
+GREP_COLOR => "1;32"
+GREP_OPTIONS => "--color=auto"
+GTK_MODULES => "canberra-gtk-module"
+G_BROKEN_FILENAMES => "1"
+HG => "/usr/bin/hg"
+HOME => "/home/torerling"
+J2REDIR => "/usr/lib/jvm/java-7-openjdk/jre"
+J2SDKDIR => "/usr/lib/jvm/java-7-openjdk"
+JAVA_HOME => "/usr/lib/jvm/java-7-openjdk"
+LANG => "C"
+LC_CTYPE => "C"
+LESS_TERMCAP_mb => "\e[01;31m"
+LESS_TERMCAP_md => "\e[01;31m"
+LESS_TERMCAP_me => "\e[0m"
+LESS_TERMCAP_se => "\e[0m"
+LESS_TERMCAP_so => "\e[01;49;1m"
+LESS_TERMCAP_ue => "\e[0m"
+LESS_TERMCAP_us => "\e[01;32m"
+LOGNAME => "torerling"
+LSCOLORS => "Gxfxcxdxbxegedabagacad"
+MAIL => "/var/spool/mail/torerling"
+MOZ_PLUGIN_PATH => "/usr/lib/mozilla/plugins"
+MUSCA => "musca"
+OLDPWD => "/home/torerling/programming"
+PAGER => "/usr/bin/less"
+PATH => "/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/torerling/.gem/ruby/1.9.1/bin:/usr/bin/core_perl"
+PWD => "/home/torerling/programming/www/torerling"
+ROXTERM_ID => "0x27c1220"
+ROXTERM_NUM => "1"
+ROXTERM_PID => "1853"
+SHELL => "/bin/zsh"
+SHLVL => "4"
+TERM => "xterm"
+USER => "torerling"
+WINDOWID => "23068690"
+WINDOWPATH => "7"
+XAUTHORITY => "/home/torerling/.Xauthority"
+XDG_CACHE_HOME => "/home/torerling/.cache"
+XDG_CONFIG_DIRS => "/etc/xdg"
+XDG_CONFIG_HOME => "/home/torerling/.config"
+XDG_DATA_DIRS => "/usr/local/share/:/usr/share/"
+XDG_DATA_HOME => "/home/torerling/.local/share"
+XDG_SESSION_COOKIE => "8b57af6242aa3d5210fe0e9200000f54-1342267242.458958-142593011"
+_ => "/home/torerling/.gem/ruby/1.9.1/bin/nanoc"
+
+=== $LOAD_PATH:
+
+  0. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib
+  1. /home/torerling/.gem/ruby/1.9.1/gems/colored-1.2/lib
+  2. /home/torerling/.gem/ruby/1.9.1/gems/cri-2.3.0/lib
+  3. /home/torerling/.gem/ruby/1.9.1/gems/nanoc-3.4.0/lib
+  4. /usr/lib/ruby/gems/1.9.1/gems/bundler-1.1.4/lib
+  5. /usr/lib/ruby/site_ruby/1.9.1
+  6. /usr/lib/ruby/site_ruby/1.9.1/x86_64-linux
+  7. /usr/lib/ruby/site_ruby
+  8. /usr/lib/ruby/vendor_ruby/1.9.1
+  9. /usr/lib/ruby/vendor_ruby/1.9.1/x86_64-linux
+  10. /usr/lib/ruby/vendor_ruby
+  11. /usr/lib/ruby/1.9.1
+  12. /usr/lib/ruby/1.9.1/x86_64-linux
